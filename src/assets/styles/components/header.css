@@ -1,0 +1,10 @@
+header{
+    width: 100vw;
+    height: 50px;
+    background-color: var(--color-fondo);
+}
+
+.header__logo{
+    width: 60px;
+    height: auto;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "gemeotrys-adventure",
+    "source": "src/index.html",
+    "scripts": {
+      "start": "parcel",
+      "build": "parcel build"
+    },
+    "author": {
+      "name": "Paula",
+      "email": "pflogar0401@g.educaand.es"
+    },
+    "devDependencies": {
+      "@parcel/transformer-sass": "^2.8.0",
+      "parcel": "^2.8.0"
+    }
+  }

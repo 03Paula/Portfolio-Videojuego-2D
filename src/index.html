@@ -1,55 +1,98 @@
-<!DOCTYPE html>
-<html lang="es" >
-    <head>
-        <meta charset="utf-8">
-        <link rel="icon" href="./assets/images/Triangulo 2.svg">
-        <link rel="styles" type="css/text" href="./assets/styles/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gemeotry's Adventure</title>
-    </head>
-    <body>
-        <header class="header">
-            <img class="header__logo" src="./assets/images/logo.png" alt="logo de la página" >
-            <!-- Poner los enlaces correspondiente a cada sección -->
-            <nav>
-                <p>Personajes</p>
-                <p>Escenarios</p>
-                <p>Videos</p>
-                <p>Sonidos</p>
-            </nav>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Gemeotry's Adventure</title>
+    <link rel="icon" href="./assets/images/Triangulo 2.svg">
+    <link rel="stylesheet" href="/src/assets/css/main.css" />
+  </head>
+  <header class="header">
+    <img class="header__logo" src="./assets/images/logo.png" alt="logo de la página" >
+    <!-- Poner los enlaces correspondiente a cada sección -->
+    <ul class="header__navBar">
+        <li><a>Personajes</a></li>
+        <li><a>Escenarios</a></li>
+        <li><a>Videos</a></li>
+        <li><a>Sonidos</a></li>
+    </ul>
 
-        </header>
+</header>
 
-        <section class="seccion__inicio">
-            <!-- Fondo realizado puede ser con los compases y el logo al frente ? y pequeña intro -->
+<section class="seccion__inicio">
+    <!-- Fondo realizado puede ser con los compases y el logo al frente ? y pequeña intro -->
+    <h1 class="inicio--h1">GEMEROTRY'S ADVENTURE</h1>
 
+</section>
 
-        </section>
+<section class="seccion__personajes">
+    <!-- Muestra los dos personajes y la historia del juego -->
+    <!-- Aquí se puede realizar un tab -->
+    <article class="tab" >
+        <button class="tab__link" id="mostrarPorDefecto" onclick="mostrarTab(event, 'Historia')">Historia</button>
+        <button class="tab__link" onclick="mostrarTab(event, 'Letriang')">Letriang</button>
+        <button class="tab__link" onclick="mostrarTab(event, 'Berub')">Berub</button>
+    </article>
+    <article id="Historia" class="tab__contenido">
+    <h2>Historia</h2>
+    <h5>Las tierras de Gemeotry se han sumido en el caos cuando Berub, la goma, harta de ser la única en Gemeotry que no posee una forma geométrica, ha decidido borrar con su poder
+        todo el reino. Es entonces, entre la desesperación de los habitantes de Gemeotry que asciende un héroe, el triángulo Letriang, que se embarca en la aventura de recolectar carboncillos de poder
+        para devolverle al reino su antiguo esplendor y detener a la malvada goma.
+    </h5>
+    </article>
+    <article id="Letriang" class="tab__contenido">
+        <h2>Letriang</h2>
+        <div class="contenido__personaje">
+            <img src="./assets/images/Triangulo 2.svg" alt="imagen del personaje principal" class="personajes" />
+            <hr />
+            <article class="contenido__datos">
+                <h6 class="contenido__p">Forma: Triangular. </h6>
+                <h6 class="contenido__p">Color: Amarillo-verdoso. </h6>
+                <h6 class="contenido__p">Forma de atacar: Con el vértice superior. </h6>
+                <h6 class="contenido__p">Personalidad: Alegre, valiente, aventurero. </h6>
+            </article>
+        </div>
+        
+        
+    </article>
+    
+    <article id="Berub" class="tab__contenido">
+        <h2>Berub</h2>
+        <div class="contenido__personaje">
+            <img  src="./assets/images/Goma.svg" alt="imagen del personaje malvado" class="personajes__goma" />
+            <hr />
+            <article class="contenido__datos">
+                <h6 class="contenido__p">Forma: Goma de borrar. </h6>
+                <h6 class="contenido__p">Color: Gris y azul. </h6>
+                <h6 class="contenido__p">Forma de atacar: Borrando, con la parte superior de su cabeza. </h6>
+                <h6 class="contenido__p">Personalidad: Gruñon, pesimista, solitario . </h6>
+            </article>
+        </div>
+        
+    </article>
+    
+    </section>
 
-        <section class="seccion__personajes">
-            <!-- Muestra los dos personajes y la historia del juego -->
-            <!-- Aquí se puede realizar un carousel -->
+</section>
 
+<section class="seccion__escenarios">
+    <!-- Muestra los escenarios y la canción asociada a él -->
+    <!-- Aqui se podría realizar un carrusel -->
+    
 
-        </section>
+</section>
 
-        <section class="seccion__escenarios">
-            <!-- Muestra los escenarios y la canción asociada a él -->
-            <!-- Aqui se podría realizar un tab -->
+<section class="seccion__videos">
+    <!-- Muestra los videos que se han elegido y la explicación -->
 
-        </section>
+</section>
 
-        <section class="seccion__videos">
-            <!-- Muestra los videos que se han elegido y la explicación -->
+<section class="seccion__sonidos">
+    <!-- Muestra los sonidos elegidos -->
 
-        </section>
+</section>
+<footer class="footer">
 
-        <section class="seccion__sonidos">
-            <!-- Muestra los sonidos elegidos -->
-
-        </section>
-        <footer class="footer">
-
-        </footer>
-    </body>
+</footer>
+</body>
+<script src="/src/assets/js/main.js"></script>
 </html>

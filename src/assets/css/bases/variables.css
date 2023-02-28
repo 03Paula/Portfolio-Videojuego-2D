@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik+Mono+One&display=swap');
+
+:root{
+    --color-fondo: #DAF7DC;
+    --color-primario: #BFEC73;
+    --color-secundario: #801D27;
+    --color-boton: #86BBD8;
+    --color-hover: #97BAC1;
+    --color-letra: #000000;
+    --color-letra1: #ffffff;
+    --color-terciario: #340000;
+    --fuente-titulo: 'Rubik Mono One', sans-serif;
+    --fuente-texto: 'Roboto Slab', serif;
+    
+}

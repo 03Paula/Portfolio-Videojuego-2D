@@ -1,0 +1,13 @@
+.seccion__inicio{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio--h1{
+    color: var(--color-primario);
+    font-weight: lighter;
+    text-align: center;
+}

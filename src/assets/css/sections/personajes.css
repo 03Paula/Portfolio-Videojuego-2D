@@ -1,0 +1,77 @@
+.seccion__personajes{
+    height: 100vh;
+    background-color: #9CC2D7;
+}
+
+.seccion__personajes h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.seccion__personajes h5{
+    text-align:justify;
+    padding: 20px;
+}
+
+.tab{
+    overflow: hidden;
+    border: 1px solid  black;
+    border-left: none;
+    background-color: lightblue;
+}
+
+.tab button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+
+.tab button:hover {
+    background-color: #7fb4c2;
+}
+
+.tab button.active {
+    background-color: #7fb4c2;
+}
+
+.tab__contenido{
+    display: none;
+    padding: 6px 12px;
+    animation: fade 1s;
+}
+
+.personajes{
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.personajes__goma{
+    width: 50%;
+}
+
+.contenido__personaje{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+hr{
+    height: 300px;
+    width: 2px;
+    border-width:0;
+    color:#000;
+    background-color: var(--color-terciario);
+    margin-right: 20px;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,226 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik+Mono+One&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: var(--fuente-titulo);
+  color: var(--color-letra);
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: var(--fuente-titulo);
+  color: var(--color-letra);
+  font-size: 3.125rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: var(--fuente-texto);
+  color: var(--color-letra);
+  font-size: 2.75rem;
+  font-weight: lighter;
+}
+
+h4 {
+  font-family: var(--fuente-texto);
+  color: var(--color-letra);
+  font-size: 2.25rem;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: var(--fuente-texto);
+  color: var(--color-letra);
+  font-size: 1.75rem;
+  font-weight: lighter;
+}
+
+h6 {
+  font-family: var(--fuente-texto);
+  color: var(--color-letra);
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+p {
+  font-family: var(--fuente-texto);
+  color: var(--color-secundario);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+:root {
+  --color-fondo: #daf7dc;
+  --color-primario: #bfec73;
+  --color-secundario: #801d27;
+  --color-boton: #86bbd8;
+  --color-hover: #97bac1;
+  --color-letra: #000;
+  --color-letra1: #fff;
+  --color-terciario: #340000;
+  --fuente-titulo: "Rubik Mono One", sans-serif;
+  --fuente-texto: "Roboto Slab", serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-fondo);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header__logo {
+  width: 180px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: var(--color-secundario);
+  text-align: center;
+  font-family: var(--fuente-texto);
+  cursor: pointer;
+  padding: 14px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.seccion__inicio {
+  height: 90vh;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.inicio--h1 {
+  color: var(--color-primario);
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+
+.seccion__personajes {
+  height: 100vh;
+  background-color: #9cc2d7;
+}
+
+.seccion__personajes h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.seccion__personajes h5 {
+  text-align: justify;
+  padding: 20px;
+}
+
+.tab {
+  background-color: #add8e6;
+  border: 1px solid #000;
+  border-left: none;
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: Roboto Slab, serif;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: all .3s;
+}
+
+.tab button:hover, .tab button.active {
+  background-color: #7fb4c2;
+}
+
+.tab__contenido {
+  padding: 6px 12px;
+  animation: 1s fade;
+  display: none;
+}
+
+.personajes {
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.personajes__goma {
+  width: 50%;
+}
+
+.contenido__personaje {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+hr {
+  height: 300px;
+  width: 2px;
+  color: #000;
+  background-color: var(--color-terciario);
+  border-width: 0;
+  margin-right: 20px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+/*# sourceMappingURL=index.4682b47d.css.map */

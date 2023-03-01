@@ -64,7 +64,7 @@
                 <h6 class="contenido__p">Forma: Goma de borrar. </h6>
                 <h6 class="contenido__p">Color: Gris y azul. </h6>
                 <h6 class="contenido__p">Forma de atacar: Borrando, con la parte superior de su cabeza. </h6>
-                <h6 class="contenido__p">Personalidad: Gruñon, pesimista, solitario . </h6>
+                <h6 class="contenido__p">Personalidad: Gruñon, pesimista, solitario. </h6>
             </article>
         </div>
         
@@ -77,17 +77,162 @@
 <section class="seccion__escenarios">
     <!-- Muestra los escenarios y la canción asociada a él -->
     <!-- Aqui se podría realizar un carrusel -->
-    
-
+        <h2>Escenarios</h2>
+    <section class="escenarios__carrusel">
+        <section class="slide">
+            <input class="slide__abierto" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+            <article class="slide__item">
+                <img class="escenarios" src="/escenarioVeranoConMascara.10bd3acf.png" alt="imagen del escenario de verano">
+                <h3 class="escenario__h3">Escenario de Verano</h3>
+                <h6 class="escenario__h6">Letriang comienza su aventura por estas tierras. El poder de Berub ya ha comenzado a hacer estragos aquí, pues comienzan a 
+                    observarse zonas borradas de un color gris apagado. Además, Berub ha roto el reino en pedazos que solo pueden conectrase con los cómpases transportadores,
+                    pero para activarlos necesita el poder de los carboncillos.
+                    <strong>¿Podrá Letriang conseguir suficientes?</strong>
+                </h6>
+            </article>
+            <input class="slide__abierto" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <article class="slide__item">
+                <img class="escenarios" src="/EscenarioOtonoManchas.5d4006ca.png" alt="imagen del escenario de otoño ">
+                <h3 class="escenario__h3">Escenario de Otoño</h3>
+                <h6 class="escenario__h6">Tras superar las tierras de verano, Letriang se adentra en las inhospitas tierras del otoño.Dicen que cuando se desperdigaron los carboncillos
+                    por el reino, los que terminaron en esta zona acabaron el lugares de díficil acceso.
+                    Decidido, Letriang aprieta el paso...
+                </h6>
+            </article>
+            <input class="slide__abierto" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <article class="slide__item">
+                <img class="escenarios" src="/EscenarioInvierno.d6632f6a.png" alt="imagen del escenario de invierno ">
+                <h3 class="escenario__h3">Escenario de Invierno</h3>
+                <h6 class="escenario__h6">No fue fácil pero Letriang ha conseguido superar las tierras del otoño y ahora se encuentra muy cerca del castillo, donde Berub reside.Sin embargo,
+                    ante él se extiende el mayor de los obstáculos, las tierras del invierno. Se cuenta que nadie que haya pasado por estas tierras ha vuelto para contarlo
+                    pues la zona se encuentra plagada de trampas letales.
+                </h6>
+            </article>
+            <label for="slide-3" class="slide__control prev control-1"><img src="/angulo-izquierdo.db181174.png" alt="icono de flecha"></label>
+            <label for="slide-2" class="slide__control next control-1"><img src="/angulo-derecho.3e264391.png" alt="icono de flecha"></label>
+            <label for="slide-1" class="slide__control prev control-2"><img src="/angulo-izquierdo.db181174.png" alt="icono de flecha"></label>
+            <label for="slide-3" class="slide__control next control-2"><img src="/angulo-derecho.3e264391.png" alt="icono de flecha"></label>
+            <label for="slide-2" class="slide__control prev control-3"><img src="/angulo-izquierdo.db181174.png" alt="icono de flecha"></label>
+            <label for="slide-1" class="slide__control next control-3"><img src="/angulo-derecho.3e264391.png" alt="icono de flecha"></label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </section>
+    </section>
 </section>
 
 <section class="seccion__videos">
     <!-- Muestra los videos que se han elegido y la explicación -->
+    <h2>Videos</h2>
+    <ul class="ul">
+        <li class="li">
+            <a href="" class="a" title="video 1">
+                <video class="video" controls="" loading="lazy">
+                    <source src="/videoJaime.258372d4.mp4" type="video/mp4" class="video">
+                    <source src="/videoJaime.98764bc9.webm" type="video/webm" class="video">
+                    Su navegador no soporta contenido multimedia.
+                </video>
+            </a>
+        </li>
+        <li class="li">
+            <a href="" class="a" title="video 2">
+                <video class="video" controls="" loading="lazy">
+                    <source src="/videoPaulaR.9fd49cfe.mp4" type="video/mp4" class="video">
+                    <source src="/videoPaulaR.7dae0be2.webm" type="video/webm" class="video">
+                    Su navegador no soporta contenido multimedia.
+                </video>
+            </a>
+        </li>
+        <li class="li">
+            <a href="" class="a" title="video 3">
+                <video class="video" controls="" loading="lazy">
+                    <source src="/triangulo_carga.d447af43.mp4" type="video/mp4" class="video">
+                    <source src="/triangulo_carga.907cfdbd.webm" type="video/webm" class="video">
+                    Su navegador no soporta contenido multimedia.
+                </video>
+            </a>
+        </li>
+    </ul>
 
+    <article class="lightbox">
+        <button class="cerrar">
+            Cerrar
+        </button>
+        <video loading="lazy">
+            <source src="/triangulo_carga.d447af43.mp4" type="video/mp4" class="video__grande">
+        </video>
+    </article> 
 </section>
 
 <section class="seccion__sonidos">
     <!-- Muestra los sonidos elegidos -->
+    <h2 class="sonidos__h2">Sonidos</h2>
+    <section class="cartas">
+       <details open="">
+            <summary class="carta__titulo">
+                Sonido bloque
+            </summary>
+            <article class="carta__contenido">
+                <audio controls="">
+                    <source src="/bloque.51b5ae95.mp3" preload="none">
+                    <source src="/bloque.5b5ba01a.ogg" preload="none">
+                    Su navegador no soporta contenido multimedia.
+                </audio>
+            </article>
+       </details>
+        <article class="article__cartas">
+            <details>
+                <summary class="carta__titulo">
+                    Coleccionar item
+                </summary>
+                <article class="carta__contenido">
+                    <audio controls="">
+                        <source src="/collect-item.3ec8dd34.mp3" preload="none">
+                        <source src="/collect-item.ebc46ea9.ogg" preload="none">
+                        Su navegador no soporta contenido multimedia.
+                    </audio>
+                </article>
+            </details>
+        </article>
+
+        <article class="article__cartas">
+            <details>
+                <summary class="carta__titulo">
+                    Viento
+                </summary>
+                <article class="carta__contenido">
+                    <audio controls="">
+                        <source src="/viento.1645a10c.mp3" preload="none">
+                        <source src="/viento.90017c2b.ogg" preload="none">
+                        Su navegador no soporta contenido multimedia.
+                    </audio>
+                </article>
+            </details>
+        </article>
+
+        <article class="article__cartas">
+            <details>
+                <summary class="carta__titulo">
+                    Música invierno
+                </summary>
+                <article class="carta__contenido">
+                    <audio controls="">
+                        <source src="/musica_nivelInvierno.4da774b6.mp3" preload="none">
+                        <source src="/musica_nivelInvierno.21d6027d.ogg" preload="none">
+                        Su navegador no soporta contenido multimedia.
+                    </audio>
+                </article>
+            </details>
+        </article>
+    </section>
 
 </section>
 <footer class="footer">
@@ -95,4 +240,4 @@
 </footer>
 
 <script src="/index.4f492e9b.js"></script>
-<script src="/Porfolio.59712999.js"></script></html>
+<script src="/Portfolio-Videojuego-2D.59712999.js"></script></html>

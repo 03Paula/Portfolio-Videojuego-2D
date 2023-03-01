@@ -1,3 +1,4 @@
+"use strict";
 // Función para el tab
 function mostrarTab(evt, contenidos) {
     // Definimos las variables
@@ -13,5 +14,29 @@ function mostrarTab(evt, contenidos) {
 }
 // Mostramos por defecto la historia
 document.getElementById("mostrarPorDefecto").click();
+const enlaces = document.querySelectorAll(".ul .a");
+const lightbox = document.querySelector(".lightbox");
+const grande = document.querySelector(".video__grande");
+const cerrar = document.querySelector(".cerrar");
+enlaces.forEach((cadaEnlace, i)=>{
+    enlaces[i].addEventListener("click", (e)=>{
+        e.preventDefault();
+        let ruta = cadaEnlace.querySelector(".video").src;
+        console.log(ruta);
+        lightbox.classList.add("activo");
+        grande.setAttribute("src", ruta);
+    });
+});
+cerrar.addEventListener("click", ()=>{
+    lightbox.classList.remove("activo");
+});
+var myAccordion = new gianniAccordion({
+    elements: ".cartas article",
+    trigger: "[data-accordion-element-trigger]",
+    content: "[data-accordion-element-content]"
+});
+myAccordion.on("elementSelected", (data)=>{
+    console.log("elementOpened", data);
+});
 
 //# sourceMappingURL=index.4f492e9b.js.map

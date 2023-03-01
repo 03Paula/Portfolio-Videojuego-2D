@@ -136,7 +136,124 @@ li a:hover {
   font-weight: lighter;
 }
 
+.seccion__escenarios {
+  width: auto;
+  height: 100vh;
+  background-color: #bed7e4;
+}
 
+.seccion__escenarios h2 {
+  text-align: center;
+  color: #86bbd8;
+  padding-top: 40px;
+}
+
+.escenarios__carrusel {
+  margin-top: 26px;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide__abierto:checked + .slide__item {
+  opacity: 100;
+  position: static;
+}
+
+.slide__item {
+  opacity: 0;
+  transition: opacity .6s ease-out;
+  position: absolute;
+}
+
+.escenarios {
+  max-width: 750px;
+  margin: auto;
+  display: block;
+}
+
+.slide__control {
+  color: #3463a8;
+  cursor: pointer;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  background: #86bbd8;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 35px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.slide__control.prev {
+  left: 2%;
+}
+
+.slide__control.next {
+  right: 2%;
+}
+
+.slide__control:hover {
+  color: #aaa;
+  background: #86bbd8;
+}
+
+#slide-1:checked ~ .control-1, #slide-2:checked ~ .control-2, #slide-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slide-indicador {
+  text-align: center;
+  z-index: 10;
+  margin-top: 30px;
+  margin-right: 45%;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slide-indicador li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.slide-circulo {
+  color: #86bbd8;
+  cursor: pointer;
+  font-size: 35px;
+  display: block;
+}
+
+.slide-circulo:hover {
+  color: #508491da;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(3) .slide-circulo, #slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo, #slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(1) .slide-circulo {
+  color: #12516b;
+}
+
+.escenario__h3 {
+  text-align: center;
+  color: #5a8cd7;
+  font-weight: 900;
+}
+
+.escenario__h6 {
+  margin: 20px 80px 50px;
+}
 
 .seccion__personajes {
   height: 100vh;
@@ -217,9 +334,123 @@ hr {
   }
 }
 
+.seccion__sonidos {
+  height: 100vh;
+  background-color: #caecc8a1;
+}
 
+.sonidos__h2 {
+  text-align: center;
+  color: #a5bdad;
+  padding-top: 20px;
+}
 
+.cartas {
+  width: 50%;
+  background: #caecc8a1;
+  margin: 50px auto;
+  box-shadow: 0 3px 2px #759e4fb4, 2px 3px 10px 5px #759e4fb4, 0 3px 1px -2px #0003;
+}
 
+.carta__titulo {
+  text-align: left;
+  color: #517c29;
+  background: #759e4f88;
+  border-bottom: 1px solid green;
+  padding: 20px 60px 20px 30px;
+  font-family: Roboto Slab, serif;
+  font-size: 2.25em;
+  transition: background .3s;
+}
+
+.carta__titulo:hover {
+  cursor: pointer;
+  background: #759e4f52;
+}
+
+audio {
+  margin: 20px auto;
+  display: block;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #74ad3fc9;
+}
+
+.seccion__videos {
+  width: auto;
+  height: 100vh;
+  background-color: #d0ecec;
+}
+
+.ul {
+  width: 90%;
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin: auto;
+  display: grid;
+}
+
+.ul .li {
+  align-items: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.ul .video {
+  width: 80%;
+  height: 200px;
+  transition: all .5s;
+  transform: scale(1.2);
+}
+
+.ul .video:hover {
+  transform: scale(1.3);
+}
+
+.lightbox {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  background: #00000080;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+}
+
+.lightbox .activo {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.lightbox .cerrar {
+  width: 4em;
+  height: 3em;
+  cursor: pointer;
+  background-color: #e0ffff;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  font-family: Roboto Slab, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lightbox .video__grande {
+  width: 80%;
+  height: 80vh;
+  background-color: #0ff;
+}
 
 
 

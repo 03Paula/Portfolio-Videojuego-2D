@@ -4,6 +4,8 @@
 
 @import './components/header.css';
 @import './components/navBar.css';
+@import './components/footer.css';
+
 @import './sections/inicio.css';
 @import './sections/escenarios.css';
 @import './sections/personajes.css';

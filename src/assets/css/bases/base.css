@@ -1,50 +1,49 @@
 
 h1{
     font-family: var(--fuente-titulo);
-    font-size: 4rem;
+    font-size: calc(3em + 1.4vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 h2{
     font-family: var(--fuente-titulo);
-    font-size: 3.125rem;
+    font-size: calc(2.125em + 1.3vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 h3{
     font-family: var(--fuente-texto);
-    font-size: 2.75rem;
+    font-size: calc(1.75em + 1.3vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 h4{
     font-family: var(--fuente-texto);
-    font-size: 2.25rem;
+    font-size: calc(1.25em + 1.3vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 h5{
     font-family: var(--fuente-texto);
-    font-size: 1.75rem;
+    font-size: calc(0.75em + 1vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 h6{
     font-family: var(--fuente-texto);
-    font-size: 1.5rem;
+    font-size: calc(0.5em + 1.5vw);
     font-weight: lighter;
     color: var(--color-letra);
 }
 
 p{
     font-family: var(--fuente-texto);
-    font-size: 1rem;
+    font-size: calc(0.3em + 1.7vw);
     font-weight: bold;
     color: var(--color-secundario);
-    
 }

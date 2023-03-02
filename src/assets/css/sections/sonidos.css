@@ -1,5 +1,6 @@
 .seccion__sonidos{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     background-color: #caecc8a1;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .acordeon__sonidos__titulo, .acordeon__musica__titulo{
-    font-size: 1.75em;
+    font-size: calc(0.75em + 1vw);
     font-family: 'Roboto Slab', serif;
     background: rgba(117, 158, 79, 0.534);
     padding: 20px 60px 20px 30px;
@@ -63,4 +64,18 @@ audio{
 
 audio::-webkit-media-controls-panel{
     background-color: #74ad3fc9;
+}
+
+@media (max-width: 750px) {
+    .acordeones{
+        flex-flow: column;
+    }
+
+    .acordeon__sonidos, .acordeon__musica{
+        width: 70%;
+    }
+
+    .sonidos__h3{
+        display: none;
+    }
 }

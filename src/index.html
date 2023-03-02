@@ -18,7 +18,8 @@
 
 </header>
 
-<section class="seccion__inicio">
+<body>
+<section class="seccion__inicio" id="inicio">
     <!-- Fondo realizado puede ser con los compases y el logo al frente ? y pequeña intro -->
     <h1 class="inicio--h1">GEMEROTRY'S ADVENTURE</h1>
 
@@ -82,7 +83,14 @@
         <section class="slide">
             <input class="slide__abierto" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked" />
             <article class="slide__item">
-                <img class="escenarios" src="./assets/images/escenarioVeranoConMascara.png" alt="imagen del escenario de verano" />
+                <img class="escenarios" 
+                    srcset="./assets/images/escenarioVeranoPequeño.png 350w,
+                            ./assets/images/escenarioVeranoMediano.png 550w,
+                            ./assets/images/escenarioVeranoGrande.png 750w"
+                    sizes="(max-width: 600px) 350px,
+                            (max-width: 800px) 550px,
+                            750px"       
+                    src="./assets/images/escenarioVeranoGrande.png" alt="imagen del escenario de verano" />
                 <h3 class="escenario__h3">Escenario de Verano</h3>
                 <h6 class="escenario__h6">Letriang comienza su aventura por estas tierras. El poder de Berub ya ha comenzado a hacer estragos aquí, pues comienzan a 
                     observarse zonas borradas de un color gris apagado. Además, Berub ha roto el reino en pedazos que solo pueden conectrase con los cómpases transportadores,
@@ -92,7 +100,14 @@
             </article>
             <input class="slide__abierto" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="" />
             <article class="slide__item">
-                <img class="escenarios" src="./assets/images/EscenarioOtonoManchas.png" alt="imagen del escenario de otoño " />
+                <img class="escenarios" 
+                    srcset="./assets/images/EscenarioOtonoPequeño.png 350w,
+                            ./assets/images/EscenarioOtonoMediano.png 550w,
+                            ./assets/images/EscenarioOtonoGrande.png 750w"
+                    sizes="(max-width: 600px) 350px,
+                            (max-width: 800px) 550px,
+                            750px"    
+                src="./assets/images/EscenarioOtonoGrande.png" alt="imagen del escenario de otoño " />
                 <h3 class="escenario__h3">Escenario de Otoño</h3>
                 <h6 class="escenario__h6">Tras superar las tierras de verano, Letriang se adentra en las inhospitas tierras del otoño.Dicen que cuando se desperdigaron los carboncillos
                     por el reino, los que terminaron en esta zona acabaron el lugares de díficil acceso.
@@ -101,7 +116,14 @@
             </article>
             <input class="slide__abierto" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="" />
             <article class="slide__item">
-                <img class="escenarios" src="./assets/images/EscenarioInvierno.png" alt="imagen del escenario de invierno " />
+                <img class="escenarios" 
+                srcset="./assets/images/EscenarioInviernoPequeño.png 350w,
+                            ./assets/images/EscenarioInviernoMediano.png 550w,
+                            ./assets/images/EscenarioInviernoGrande.png 750w"
+                sizes="(max-width: 600px) 350px,
+                        (max-width: 800px) 550px,
+                        750px"    
+                src="./assets/images/EscenarioInviernoGrande.png" alt="imagen del escenario de invierno " />
                 <h3 class="escenario__h3">Escenario de Invierno</h3>
                 <h6 class="escenario__h6">No fue fácil pero Letriang ha conseguido superar las tierras del otoño y ahora se encuentra muy cerca del castillo, donde Berub reside.Sin embargo,
                     ante él se extiende el mayor de los obstáculos, las tierras del invierno. Se cuenta que nadie que haya pasado por estas tierras ha vuelto para contarlo
@@ -180,6 +202,7 @@
 
     <section class="acordeones">
         <section class="acordeon__sonidos">
+
             <details>
                  <summary class="acordeon__sonidos__titulo">
                      Sonido bloque
@@ -286,9 +309,16 @@
     
     
 </section>
-<footer class="footer">
-
-</footer>
 </body>
+<footer class="footer">
+    <h4 class="footer__h4" >Gemeotry's Adventure</h4>
+    <a href="#inicio"><img class="footer__logo" src="./assets/images/logo.png" alt="logo del juego"  ></a>
+    <ul class="footer__navBar">
+        <li><a href="#sonidos">Sonidos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#escenarios">Escenarios</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+    </ul>
+</footer>
 <script src="/src/assets/js/main.js"></script>
 </html>

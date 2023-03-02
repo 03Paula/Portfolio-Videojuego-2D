@@ -37,7 +37,6 @@
 .escenarios{
     display: block;
     margin: auto;
-    max-width: 750px;
 }
 
 .slide__control{
@@ -98,6 +97,7 @@
     display: block;
     font-size: 35px;
 }
+
 .slide-circulo:hover {
     color: rgba(80, 132, 145, 0.856);
 }

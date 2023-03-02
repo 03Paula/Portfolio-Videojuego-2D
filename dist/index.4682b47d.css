@@ -19,49 +19,49 @@ body {
 h1 {
   font-family: var(--fuente-titulo);
   color: var(--color-letra);
-  font-size: 4rem;
+  font-size: calc(3em + 1.4vw);
   font-weight: lighter;
 }
 
 h2 {
   font-family: var(--fuente-titulo);
   color: var(--color-letra);
-  font-size: 3.125rem;
+  font-size: calc(2.125em + 1.3vw);
   font-weight: lighter;
 }
 
 h3 {
   font-family: var(--fuente-texto);
   color: var(--color-letra);
-  font-size: 2.75rem;
+  font-size: calc(1.75em + 1.3vw);
   font-weight: lighter;
 }
 
 h4 {
   font-family: var(--fuente-texto);
   color: var(--color-letra);
-  font-size: 2.25rem;
+  font-size: calc(1.25em + 1.3vw);
   font-weight: lighter;
 }
 
 h5 {
   font-family: var(--fuente-texto);
   color: var(--color-letra);
-  font-size: 1.75rem;
+  font-size: calc(.75em + 1vw);
   font-weight: lighter;
 }
 
 h6 {
   font-family: var(--fuente-texto);
   color: var(--color-letra);
-  font-size: 1.5rem;
+  font-size: calc(.5em + 1.5vw);
   font-weight: lighter;
 }
 
 p {
   font-family: var(--fuente-texto);
   color: var(--color-secundario);
-  font-size: 1rem;
+  font-size: calc(.3em + 1.7vw);
   font-weight: bold;
 }
 
@@ -91,7 +91,6 @@ header {
 .header__logo {
   width: 180px;
   height: auto;
-  margin-top: 30px;
   margin-left: 20px;
 }
 
@@ -120,6 +119,38 @@ li a {
 li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #b2ce96cc;
+}
+
+.footer__logo {
+  width: 200px;
+  height: auto;
+  margin: auto auto 40px;
+  display: block;
+}
+
+.footer__h4 {
+  color: var(--color-secundario);
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.footer__navBar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer__navBar li {
+  float: none;
+  margin: auto;
+  display: block;
 }
 
 .seccion__inicio {
@@ -172,7 +203,6 @@ li a:hover {
 }
 
 .escenarios {
-  max-width: 750px;
   margin: auto;
   display: block;
 }
@@ -335,7 +365,8 @@ hr {
 }
 
 .seccion__sonidos {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: max-content;
   background-color: #caecc8a1;
 }
 
@@ -371,7 +402,7 @@ hr {
   border-bottom: 1px solid green;
   padding: 20px 60px 20px 30px;
   font-family: Roboto Slab, serif;
-  font-size: 1.75em;
+  font-size: calc(.75em + 1vw);
   transition: background .3s;
 }
 
@@ -400,6 +431,20 @@ audio::-webkit-media-controls-panel {
   background-color: #74ad3fc9;
 }
 
+@media (max-width: 750px) {
+  .acordeones {
+    flex-flow: column;
+  }
+
+  .acordeon__sonidos, .acordeon__musica {
+    width: 70%;
+  }
+
+  .sonidos__h3 {
+    display: none;
+  }
+}
+
 .seccion__videos {
   width: auto;
   height: 100vh;
@@ -408,6 +453,7 @@ audio::-webkit-media-controls-panel {
 
 .seccion__videos h2 {
   text-align: center;
+  color: #68a08ab4;
   padding-top: 20px;
 }
 

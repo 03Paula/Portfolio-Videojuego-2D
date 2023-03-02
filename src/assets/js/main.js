@@ -25,35 +25,29 @@ function mostrarTab(evt, contenidos ){
 // Mostramos por defecto la historia
 document.getElementById("mostrarPorDefecto").click();
 
-const enlaces  = document.querySelectorAll('.ul .a')
-const lightbox = document.querySelector('.lightbox')
-const grande   = document.querySelector('.video__grande')
-const cerrar   = document.querySelector('.cerrar')
 
-enlaces.forEach(( cadaEnlace , i )=>{
-    enlaces[i].addEventListener('click', ( e )=>{
-        e.preventDefault()
-        let ruta = cadaEnlace.querySelector('.video').src
-        console.log( ruta ) 
+// Para la galeria de videos
 
-        lightbox.classList.add('activo')
-        grande.setAttribute('src', ruta)
+const contenedor = document.getElementById('contenedor');
+let mainVideo = document.querySelector('.main-video video');
+const videos = document.querySelectorAll('.videos');
+const cerrar = document.querySelector('.cerrar');
 
-    })
-})
+for (let i = 0; i < videos.length; i++){
+    videos[i].addEventListener("click", (e) =>{
+        const target = e.target;
+        contenedor.className +=" active";
+        target.className += " active"; // Añadimos la clase active en el video.
+        let src = document.querySelector(".videos.active source").src;
+        mainVideo.src = src; // cambiamos la src que teniamos predeterminada por el video en el que se ha hecho click.
+        console.log(mainVideo)
+        console.log(contenedor)
+        console.log(src)
 
-cerrar.addEventListener('click', ()=>{
-    lightbox.classList.remove('activo')
-})
-
-
-
-var myAccordion = new gianniAccordion({
-    elements: ".cartas article",
-            trigger: "[data-accordion-element-trigger]",
-          content: "[data-accordion-element-content]",
-  });
-  
-  myAccordion.on("elementSelected", (data)=>{
-    console.log("elementOpened", data);
-  });
+        // Cuando cliqueamos en la cruz eliminamos la clase active.
+        cerrar.onclick = () =>{
+            contenedor.classList.remove("active");
+            target.classList.remove("active");
+        };
+    });
+}

@@ -3,21 +3,32 @@
     background-color: #caecc8a1;
 }
 
-.sonidos__h2{
+.sonidos__h2, .sonidos__h3{
     text-align: center;
     padding-top: 20px;
     color: #a5bdad;
 }
 
-.cartas{
-    width: 50%;
+.sonidos__titulos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.acordeones{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+.acordeon__sonidos, .acordeon__musica{
+    width: 40%;
     margin: 50px auto;
     background: #caecc8a1;
     box-shadow: 0 3px 2px 0 rgba(117, 158, 79, 0.705), 2 3px 10px 5 rgba(117, 158, 79, 0.705), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
-.carta__titulo{
-    font-size: 2.25em;
+.acordeon__sonidos__titulo, .acordeon__musica__titulo{
+    font-size: 1.75em;
     font-family: 'Roboto Slab', serif;
     background: rgba(117, 158, 79, 0.534);
     padding: 20px 60px 20px 30px;
@@ -27,16 +38,27 @@
     border-bottom: 1px solid green;
 }
 
-.carta__titulo:hover{
+.acordeon__sonidos__titulo:hover, .acordeon__musica__titulo:hover{
     cursor: pointer;
     background: rgba(117, 158, 79, 0.322);
+}
+
+.contenido__p{
+    color: #517c29;
+    text-align: center;
+    margin: 10px ;
+}
+
+#coleccionable{
+    width:auto;
+    height: 40px;
 }
 
 audio{
     display: block;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 audio::-webkit-media-controls-panel{

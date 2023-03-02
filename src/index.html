@@ -10,10 +10,10 @@
     <img class="header__logo" src="./assets/images/logo.png" alt="logo de la página" >
     <!-- Poner los enlaces correspondiente a cada sección -->
     <ul class="header__navBar">
-        <li><a>Personajes</a></li>
-        <li><a>Escenarios</a></li>
-        <li><a>Videos</a></li>
-        <li><a>Sonidos</a></li>
+        <li><a href="#sonidos">Sonidos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#escenarios">Escenarios</a></li>
+        <li><a href="#personajes">Personajes</a></li>
     </ul>
 
 </header>
@@ -24,7 +24,7 @@
 
 </section>
 
-<section class="seccion__personajes">
+<section class="seccion__personajes" id="personajes">
     <!-- Muestra los dos personajes y la historia del juego -->
     <!-- Aquí se puede realizar un tab -->
     <article class="tab" >
@@ -45,10 +45,10 @@
             <img src="./assets/images/Triangulo 2.svg" alt="imagen del personaje principal" class="personajes" />
             <hr />
             <article class="contenido__datos">
-                <h6 class="contenido__p">Forma: Triangular. </h6>
-                <h6 class="contenido__p">Color: Amarillo-verdoso. </h6>
-                <h6 class="contenido__p">Forma de atacar: Con el vértice superior. </h6>
-                <h6 class="contenido__p">Personalidad: Alegre, valiente, aventurero. </h6>
+                <h6 class="contenido__h6">Forma: Triangular. </h6>
+                <h6 class="contenido__h6">Color: Amarillo-verdoso. </h6>
+                <h6 class="contenido__h6">Forma de atacar: Con el vértice superior. </h6>
+                <h6 class="contenido__h6">Personalidad: Alegre, valiente, aventurero. </h6>
             </article>
         </div>
         
@@ -61,10 +61,10 @@
             <img  src="./assets/images/Goma.svg" alt="imagen del personaje malvado" class="personajes__goma" />
             <hr />
             <article class="contenido__datos">
-                <h6 class="contenido__p">Forma: Goma de borrar. </h6>
-                <h6 class="contenido__p">Color: Gris y azul. </h6>
-                <h6 class="contenido__p">Forma de atacar: Borrando, con la parte superior de su cabeza. </h6>
-                <h6 class="contenido__p">Personalidad: Gruñon, pesimista, solitario. </h6>
+                <h6 class="contenido__h6">Forma: Goma de borrar. </h6>
+                <h6 class="contenido__h6">Color: Gris y azul. </h6>
+                <h6 class="contenido__h6">Forma de atacar: Borrando, con la parte superior de su cabeza. </h6>
+                <h6 class="contenido__h6">Personalidad: Gruñon, pesimista, solitario. </h6>
             </article>
         </div>
         
@@ -74,7 +74,7 @@
 
 </section>
 
-<section class="seccion__escenarios">
+<section class="seccion__escenarios" id="escenarios">
     <!-- Muestra los escenarios y la canción asociada a él -->
     <!-- Aqui se podría realizar un carrusel -->
         <h2>Escenarios</h2>
@@ -129,111 +129,162 @@
     </section>
 </section>
 
-<section class="seccion__videos">
+<section class="seccion__videos" id="videos">
     <!-- Muestra los videos que se han elegido y la explicación -->
     <h2>Videos</h2>
-    <ul class="ul">
-        <li class="li">
-            <a href="" class="a" title="video 1">
-                <video class="video" controls loading="lazy">
+    <section class="contenedor" id="contenedor">
+        <section class="contenedor__videos">
+            <article class="main-video">
+                <video class="video" src="./assets/videos/videoJaime.mp4" controls muted autoplay loading="lazy">
+                </video>
+                <i class="cerrar"><img src="./assets/images/cerrar.png" alt="" /></i>
+            </article>
+            <article class="videos">
+                <video class="video"  loading="lazy">
                     <source src="./assets/videos/videoJaime.mp4" type="video/mp4" class="video" />
                     <source src="./assets/videos/videoJaime.webm" type="video/webm" class="video" />
                     Su navegador no soporta contenido multimedia.
                 </video>
-            </a>
-        </li>
-        <li class="li">
-            <a href="" class="a" title="video 2">
-                <video class="video" controls loading="lazy">
+                <i><img src="./assets/images/reproducir.png" alt="" /></i>
+            </article>
+    
+            <article class="videos">
+                <video class="video" loading="lazy">
                     <source src="./assets/videos/videoPaulaR.mp4" type="video/mp4" class="video" />
                     <source src="./assets/videos/videoPaulaR.webm" type="video/webm" class="video" />
                     Su navegador no soporta contenido multimedia.
                 </video>
-            </a>
-        </li>
-        <li class="li">
-            <a href="" class="a" title="video 3">
-                <video class="video" controls loading="lazy">
+                <i><img src="./assets/images/reproducir.png" alt="" /></i>
+            </article>
+    
+            <article class="videos">
+                <video class="video" loading="lazy">
                     <source src="./assets/videos/triangulo_carga.mp4" type="video/mp4" class="video" />
                     <source src="./assets/videos/triangulo_carga.webm" type="video/webm" class="video" />
                     Su navegador no soporta contenido multimedia.
                 </video>
-            </a>
-        </li>
-    </ul>
-
-    <article class="lightbox">
-        <button class="cerrar">
-            Cerrar
-        </button>
-        <video loading="lazy">
-            <source src="./assets/videos/triangulo_carga.mp4"  type="video/mp4" class="video__grande"/>
-        </video>
-    </article> 
+                <i><img src="./assets/images/reproducir.png" alt="" /></i>
+            </article>
+        </section>
+    </section>
+    
 </section>
 
-<section class="seccion__sonidos">
+<section class="seccion__sonidos" id="sonidos">
     <!-- Muestra los sonidos elegidos -->
     <h2 class="sonidos__h2">Sonidos</h2>
-    <section class="cartas">
-       <details open>
-            <summary class="carta__titulo">
-                Sonido bloque
-            </summary>
-            <article class="carta__contenido">
-                <audio controls>
-                    <source src="./assets/sound/bloque.mp3" preload="none"  />
-                    <source src="./assets/sound/bloque.ogg" preload="none" />
-                    Su navegador no soporta contenido multimedia.
-                </audio>
-            </article>
-       </details>
-        <article class="article__cartas" >
-            <details>
-                <summary class="carta__titulo">
-                    Coleccionar item
-                </summary>
-                <article class="carta__contenido">
-                    <audio controls>
-                        <source src="./assets/sound/collect-item.mp3" preload="none"  />
-                        <source src="./assets/sound/collect-item.ogg" preload="none" />
-                        Su navegador no soporta contenido multimedia.
-                    </audio>
-                </article>
-            </details>
-        </article>
-
-        <article class="article__cartas">
-            <details>
-                <summary class="carta__titulo">
-                    Viento
-                </summary>
-                <article class="carta__contenido" >
-                    <audio controls>
-                        <source src="./assets/sound/viento.mp3" preload="none"  />
-                        <source src="./assets/sound/viento.ogg" preload="none" />
-                        Su navegador no soporta contenido multimedia.
-                    </audio>
-                </article>
-            </details>
-        </article>
-
-        <article class="article__cartas">
-            <details>
-                <summary class="carta__titulo">
-                    Música invierno
-                </summary>
-                <article class="carta__contenido" >
-                    <audio controls>
-                        <source src="./assets/sound/musica_nivelInvierno.mp3" preload="none"  />
-                        <source src="./assets/sound/musica_nivelInvierno.ogg" preload="none" />
-                        Su navegador no soporta contenido multimedia.
-                    </audio>
-                </article>
-            </details>
-        </article>
+    <section class="sonidos__titulos">
+        <h3 class="sonidos__h3">Sonidos</h3>
+        <h3 class="sonidos__h3">Músicas</h3>
     </section>
 
+    <section class="acordeones">
+        <section class="acordeon__sonidos">
+            <details>
+                 <summary class="acordeon__sonidos__titulo">
+                     Sonido bloque
+                 </summary>
+                 <article class="acordeon__sonidos__contenido">
+                     <audio controls preload="none" >
+                         <source src="./assets/sound/bloque.mp3"  />
+                         <source src="./assets/sound/bloque.webm" />
+                         <source src="./assets/sound/bloque.ogg" />
+                         Su navegador no soporta contenido multimedia.
+                     </audio>
+                 </article>
+                 <p class="contenido__p">Sonido para cuando golpee el bloque<img src="./assets/images/bloqueTrampa.png" alt="Imagen del bloque trampa" /></p>
+            </details>
+             <article class="article__cartas" >
+                 <details>
+                     <summary class="acordeon__sonidos__titulo">
+                         Coleccionar item
+                     </summary>
+                     <article class="acordeon__sonidos__contenido">
+                         <audio controls preload="none" >
+                             <source src="./assets/sound/collect-item.mp3"  />
+                             <source src="./assets/sound/collect-item.webm" />
+                             <source src="./assets/sound/collect-item.ogg" />
+                             Su navegador no soporta contenido multimedia.
+                         </audio>
+                         <p class="contenido__p">Sonido para cuando se recoja un coleccionable<img id="coleccionable" src="./assets/images/carboncillo_coleccionable.png" alt="Imagen del coleccionable" ></p>
+                     </article>
+                 </details>
+             </article>
+     
+             <article class="article__cartas">
+                 <details>
+                     <summary class="acordeon__sonidos__titulo">
+                         Viento
+                     </summary>
+                     <article class="acordeon__sonidos__contenido" >
+                         <audio controls preload="none" >
+                             <source src="./assets/sound/viento.mp3"  />
+                             <source src="./assets/sound/viento.webm" />
+                             <source src="./assets/sound/viento.ogg" />
+                             Su navegador no soporta contenido multimedia.
+                         </audio>
+                         <p class="contenido__p">Sonido para el viento.</p>
+                     </article>
+                 </details>
+             </article>
+         </section>
+     
+         <section class="acordeon__musica">
+             <article class="article__cartas">
+                 <details>
+                     <summary class="acordeon__musica__titulo">
+                        Verano
+                     </summary>
+                     <article class="acordeon__musica__contenido" >
+                         <audio controls preload="none" >
+                             <source src="./assets/sound/nivelverano.mp3"  />
+                             <source src="./assets/sound/nivelverano.webm" />
+                             <source src="./assets/sound/nivelverano.ogg" />
+                             Su navegador no soporta contenido multimedia.
+                         </audio>
+                         <p class="contenido__p">Música para el escenario de verano.</p>
+                     </article>
+                 </details>
+             </article>
+
+             <article class="article__cartas">
+                <details>
+                    <summary class="acordeon__musica__titulo">
+                       Otoño
+                    </summary>
+                    <article class="acordeon__musica__contenido" >
+                        <audio controls preload="none" >
+                            <source src="./assets/sound/nivelOtoño.mp3"  />
+                            <source src="./assets/sound/nivelOtoño.webm" />
+                            <source src="./assets/sound/nivelOtoño.ogg" />
+                            Su navegador no soporta contenido multimedia.
+                        </audio>
+                        <p class="contenido__p" >Música para el escenario de otoño.</p>
+                    </article>
+                </details>
+             </article>
+
+             <article class="article__cartas">
+                <details>
+                    <summary class="acordeon__musica__titulo">
+                       Invierno
+                    </summary>
+                    <article class="acordeon__musica__contenido" >
+                        <audio controls preload="none" >
+                            <source src="./assets/sound/nivelInvierno.mp3"  />
+                            <source src="./assets/sound/nivelInvierno.webm" />
+                            <source src="./assets/sound/nivelInvierno.ogg" />
+                            Su navegador no soporta contenido multimedia.
+                        </audio>
+                        <p class="contenido__p" >Música para el escenario de invierno.</p>
+                    </article>
+                </details>
+             </article>
+         </section>
+
+    </section>
+    
+    
 </section>
 <footer class="footer">
 

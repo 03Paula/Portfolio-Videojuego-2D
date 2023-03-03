@@ -169,7 +169,8 @@ li a:hover {
 
 .seccion__escenarios {
   width: auto;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: max-content;
   background-color: #bed7e4;
 }
 
@@ -336,7 +337,8 @@ li a:hover {
 }
 
 .personajes__goma {
-  width: 50%;
+  max-width: 150px;
+  min-width: 100px;
 }
 
 .contenido__personaje {

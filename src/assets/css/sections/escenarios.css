@@ -1,6 +1,7 @@
 .seccion__escenarios{
     width: auto;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     background-color: #BED7E4;
 }
 
